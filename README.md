@@ -4,11 +4,23 @@ Attempting an integration of Jasonette into the JSON view rendering of Phoenix.
 
 # Local Setup
 
-Coming soon.
+1. Clone the repo locally
+
+2. Run `mix deps.get`
+
+3. Fire up `mix phx.server`
+
+4. Set `localhost:4000/app` as the `<string name="url"></string>` in your Jasonette app directory
+
+5. Build and run your app on Android or iOS, updated the JSON dynamically.
 
 # Project Details
 
 Project was set up with `mix phx.new jasonette_exploration --no-html --no-brunch --no-ecto`.
+
+# TODO
+
+- Set up Phoenix channel or Jasonette agent that checks for source code updates?
 
 # Dependency or umbrella app?
 
