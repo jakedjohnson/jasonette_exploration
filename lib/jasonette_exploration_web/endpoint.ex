@@ -1,7 +1,7 @@
-defmodule JasonetteExplorationWeb.Endpoint do
+defmodule JasonetteExplorationMobile.Endpoint do
   use Phoenix.Endpoint, otp_app: :jasonette_exploration
 
-  socket "/socket", JasonetteExplorationWeb.UserSocket
+  socket "/socket", JasonetteExplorationMobile.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -35,7 +35,7 @@ defmodule JasonetteExplorationWeb.Endpoint do
     key: "_jasonette_exploration_key",
     signing_salt: "UbjN3FtP"
 
-  plug JasonetteExplorationWeb.Router
+  plug JasonetteExplorationMobile.Router
 
   @doc """
   Callback invoked for dynamically configuring the endpoint.

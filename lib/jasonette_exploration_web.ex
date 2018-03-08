@@ -1,12 +1,12 @@
-defmodule JasonetteExplorationWeb do
+defmodule JasonetteExplorationMobile do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use JasonetteExplorationWeb, :controller
-      use JasonetteExplorationWeb, :view
+      use JasonetteExplorationMobile, :controller
+      use JasonetteExplorationMobile, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,24 +19,24 @@ defmodule JasonetteExplorationWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: JasonetteExplorationWeb
+      use Phoenix.Controller, namespace: JasonetteExplorationMobile
       import Plug.Conn
-      import JasonetteExplorationWeb.Router.Helpers
-      import JasonetteExplorationWeb.Gettext
+      import JasonetteExplorationMobile.Router.Helpers
+      import JasonetteExplorationMobile.Gettext
     end
   end
 
   def view do
     quote do
       use Phoenix.View, root: "lib/jasonette_exploration_web/templates",
-                        namespace: JasonetteExplorationWeb
+                        namespace: JasonetteExplorationMobile
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
 
-      import JasonetteExplorationWeb.Router.Helpers
-      import JasonetteExplorationWeb.ErrorHelpers
-      import JasonetteExplorationWeb.Gettext
+      import JasonetteExplorationMobile.Router.Helpers
+      import JasonetteExplorationMobile.ErrorHelpers
+      import JasonetteExplorationMobile.Gettext
     end
   end
 
@@ -51,7 +51,7 @@ defmodule JasonetteExplorationWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import JasonetteExplorationWeb.Gettext
+      import JasonetteExplorationMobile.Gettext
     end
   end
 

@@ -6,10 +6,10 @@
 use Mix.Config
 
 # Configures the endpoint
-config :jasonette_exploration, JasonetteExplorationWeb.Endpoint,
+config :jasonette_exploration, JasonetteExplorationMobile.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "6nRxdIKOgGPPTGm1LRvvziqxxcRma8sop61MP5+q6GnDi1F3pjsSWKdvYz91/ueq",
-  render_errors: [view: JasonetteExplorationWeb.ErrorView, accepts: ~w(json)],
+  render_errors: [view: JasonetteExplorationMobile.ErrorView, accepts: ~w(json)],
   pubsub: [name: JasonetteExploration.PubSub,
            adapter: Phoenix.PubSub.PG2]
 

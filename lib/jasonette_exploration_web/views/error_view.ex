@@ -1,5 +1,5 @@
-defmodule JasonetteExplorationWeb.ErrorView do
-  use JasonetteExplorationWeb, :view
+defmodule JasonetteExplorationMobile.ErrorView do
+  use JasonetteExplorationMobile, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

@@ -1,4 +1,4 @@
-defmodule JasonetteExplorationWeb.ErrorHelpers do
+defmodule JasonetteExplorationMobile.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -25,9 +25,9 @@ defmodule JasonetteExplorationWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(JasonetteExplorationWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(JasonetteExplorationMobile.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(JasonetteExplorationWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(JasonetteExplorationMobile.Gettext, "errors", msg, opts)
     end
   end
 end

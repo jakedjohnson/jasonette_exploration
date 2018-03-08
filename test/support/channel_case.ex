@@ -1,4 +1,4 @@
-defmodule JasonetteExplorationWeb.ChannelCase do
+defmodule JasonetteExplorationMobile.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,7 +21,7 @@ defmodule JasonetteExplorationWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint JasonetteExplorationWeb.Endpoint
+      @endpoint JasonetteExplorationMobile.Endpoint
     end
   end
 

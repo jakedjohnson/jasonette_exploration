@@ -9,7 +9,7 @@ defmodule JasonetteExploration.Application do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the endpoint when the application starts
-      supervisor(JasonetteExplorationWeb.Endpoint, []),
+      supervisor(JasonetteExplorationMobile.Endpoint, []),
       # Start your own worker by calling: JasonetteExploration.Worker.start_link(arg1, arg2, arg3)
       # worker(JasonetteExploration.Worker, [arg1, arg2, arg3]),
     ]
@@ -23,7 +23,7 @@ defmodule JasonetteExploration.Application do
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    JasonetteExplorationWeb.Endpoint.config_change(changed, removed)
+    JasonetteExplorationMobile.Endpoint.config_change(changed, removed)
     :ok
   end
 end
