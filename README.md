@@ -12,7 +12,7 @@ Attempting an integration of Jasonette into the JSON view rendering of Phoenix.
 
 4. Set `localhost:4000/app` as the `<string name="url"></string>` in your Jasonette app directory
 
-5. Build and run your app on Android or iOS, updated the JSON dynamically.
+5. Build and run your app on your Android or iOS device
 
 # Project Details
 
